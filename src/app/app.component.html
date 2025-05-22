@@ -1,12 +1,33 @@
 
-<div>
-  <h1>Projeto Angular</h1>
+
   
   <div style="display: flex; justify-content: space-around;">
     <div>
-      <h3><a routerLink="/">Verificador de palavras</a></h3>
-      <h3><a routerLink="/calculator">Calculadora</a></h3>
+      <app-page-title title="Projeto de Sistemas Distribuídos com Angular"/>
+      <div class="cards-container">
+        <app-card
+          title="Verificador de palavras"
+          text="Conta a quantidade de caracteres de uma palavra e também diz se ela é um palíndromo"
+          route="/charCount"
+        >
+        </app-card>
+
+        <app-card
+          title="Calculadora"
+          text="Faça operações matemáticas básicas"
+          route="/calculator"
+        >
+        </app-card>
+
+        <app-card
+          title="Verificador de CEP"
+          text="Busque por um CEP e verifique o endereço"
+          route="/cepChecker"
+        >
+        </app-card>
+      </div>
+
+
       <router-outlet></router-outlet>  
     </div>
   </div>
-</div>
